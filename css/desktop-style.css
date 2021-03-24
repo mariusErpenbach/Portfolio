@@ -1,0 +1,54 @@
+nav{
+    height:auto;
+    width:100%;
+    border-style:dotted;
+    border-color:orange;
+    display:flex;
+    flex-direction:row;
+}
+#portfolioName{
+    flex:20;
+    display:flex;
+    background-color:cadetblue;
+    align-items:flex-start;
+}
+#nav-mid-section{
+    flex:50;
+    background-color:chartreuse;
+    border-style:solid;
+    border-style:black;
+}
+#infoSection{
+    flex:30;
+    display:flex;
+    background-color:coral;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+#infoSection > div{   
+    display:flex;
+    height:90%;
+    width:45%;
+    border-style:solid;
+    align-items:center;
+    justify-content:center;
+    font-size:1.5em;
+}
+#aboutButton{
+margin-right:1%;
+}/*
+#contactButton{
+} */
+#welcomeMessage{
+    display:none;
+}
+#nav-mid-section{
+    display:flex;
+align-items:center;
+}
+#searchSection{
+    display:flex;
+    flex-direction:row;
+}
+#searchBar{
+}
