@@ -1,5 +1,4 @@
 nav{
-    height:auto;
     width:100%;
     border-style:dotted;
     border-color:orange;
@@ -10,7 +9,8 @@ nav{
     flex:20;
     display:flex;
     background-color:cadetblue;
-    align-items:flex-start;
+    align-items:center;
+
     font-size:2em;
 }
     #portfolioName>a:link{
@@ -20,7 +20,7 @@ nav{
 
 #nav-mid-section{
     flex:50;
-    background-color:chartreuse;
+    background-color:teal;
     border-style:solid;
     border-style:black;
     display:flex;
@@ -28,21 +28,28 @@ nav{
     justify-content:center;
 }
 #welcomeMessage{
-    display:none;
+    display:flex;   /* */
+}
+#welcomeMessage > p {
+    font-size:2em;
+    height:100%;
+    color:white;
+    background-color:yellow;
 }
 #searchSection{
-    display:flex;
+    display:flex; /* */
+    display:none;
     flex-direction:row;
     border-style:dotted;
     border-color:black;
-    width:65%;
-    height:35%;
+    width:70%;
+    height:50%;
 }
 #searchBar{
     width:95%;
 }
-#searchIcon{
-    font-size:1.2em;
+.fa-search{
+    font-size:1.6em;
 }
 
 
@@ -70,8 +77,66 @@ margin-right:1%;
 } */
 
 #openingAsideBar{
-    height:93vh;
-    width:10%;
-    border-color:red;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    height:70vh;
+    width:20%; 
     border-style:dotted;
 }
+#aS-projectCover > header{
+    color:white;
+    font-size:2em;
+}
+.asideSection{
+    height:26vh;
+    width:80%;
+    display:flex;
+    align-content:center;
+    align-items:center;
+    flex-direction: column;
+    border-color:blue;
+    border-style:dotted;
+    align-self:flex-end;
+    margin-bottom:-50%;
+    transition: 0.5s ease-in-out;
+}
+.asideSection:hover {
+margin-bottom:0%;
+}
+#aS-projectCover{
+    align-self:center;
+    background-color:rgb(230, 185, 157);
+   
+}
+#aS-projectOne{
+    top:-4em;
+    border-color:crimson;
+    background-color:rgb(230, 220, 157);
+}
+#aS-projectTwo{
+    top:-4em;
+    border-color:crimson;
+    background-color:rgb(207, 220, 157);
+}
+#aS-projectThree{
+    top:-4em;
+    border-color:crimson;
+    background-color:rgb(207, 220, 187);
+}
+
+#aS-projectFour{
+    top:-4em;
+    background-color:rgb(207, 205, 187);
+}
+#aS-projectFive{
+    top:-4em;
+    background-color:rgb(179, 181, 187);
+}
+footer{
+    position:fixed;
+    bottom:0;
+    width:auto;
+    height:15%;
+border-style:dotted;
+border-color:black;
