@@ -105,6 +105,9 @@ margin-right:1%;
 margin-bottom:0%;
 flex-direction:column-reverse;
 }
+.asideSection:hover content>p{
+    display:flex;
+}
 /* .asideSection:hover  header>a{
     CHANGE HEADING STYLE ON HOVER HERE.
 } */ 
@@ -112,8 +115,8 @@ flex-direction:column-reverse;
         color:white;
         font-size:2em;
 }
-.asideSection >content{
-    
+.asideSection >content>p{
+display:none;
 }
 #aS-projectCover{
     align-self:center;
