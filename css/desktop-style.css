@@ -1,4 +1,6 @@
 nav{
+    position:fixed;
+    top:0;
     width:100%;
     border-style:dotted;
     border-color:orange;
@@ -10,7 +12,6 @@ nav{
     display:flex;
     background-color:cadetblue;
     align-items:center;
-
     font-size:2em;
 }
     #portfolioName>a:link{
@@ -77,6 +78,8 @@ margin-right:1%;
 } */
 
 #openingAsideBar{
+    top:7rem;
+    position:fixed;
     display:flex;
     align-items:center;
     flex-direction:column;
@@ -84,10 +87,7 @@ margin-right:1%;
     width:20%; 
     border-style:dotted;
 }
-#aS-projectCover > header{
-    color:white;
-    font-size:2em;
-}
+
 .asideSection{
     height:26vh;
     width:80%;
@@ -103,11 +103,21 @@ margin-right:1%;
 }
 .asideSection:hover {
 margin-bottom:0%;
+flex-direction:column-reverse;
+}
+/* .asideSection:hover  header>a{
+    CHANGE HEADING STYLE ON HOVER HERE.
+} */ 
+.asideSection >header{
+        color:white;
+        font-size:2em;
+}
+.asideSection >content{
+    
 }
 #aS-projectCover{
     align-self:center;
     background-color:rgb(230, 185, 157);
-   
 }
 #aS-projectOne{
     top:-4em;
@@ -124,7 +134,6 @@ margin-bottom:0%;
     border-color:crimson;
     background-color:rgb(207, 220, 187);
 }
-
 #aS-projectFour{
     top:-4em;
     background-color:rgb(207, 205, 187);
@@ -133,10 +142,23 @@ margin-bottom:0%;
     top:-4em;
     background-color:rgb(179, 181, 187);
 }
+
+
+main{
+    background-color:cadetblue;
+    height:70vh;
+    width:78.5%;
+    border-style:dotted;
+    margin-top:7rem;
+    margin-left:21%;
+}
+
+
+
+
 footer{
-    position:fixed;
-    bottom:0;
-    width:auto;
+    width:100%;
     height:15%;
 border-style:dotted;
 border-color:black;
+}
