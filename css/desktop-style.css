@@ -3,7 +3,7 @@ body{
 }
 /*----------------------TOP NAV HEADER------------------------------------*/
 nav{
-    position:fixed;
+    position:absolute;
     background-color:#55868a23;
     top:0;
     width:100%;
@@ -16,16 +16,17 @@ nav{
 }
 /*----------------------TOP NAV HEADER------------------LEFT------------*/
 #portfolioName{
+    overflow:hidden;
     display:flex;
     flex-direction:row;
     width:auto;
-    font-size:2em;
 border-style:dotted;
 margin-right:1.2%;
 }
 #portfolioName>a{
     font-size:6rem;
     color:rgba(252, 252, 252, 0.719);
+  
 }
     #portfolioName>a:link{
     text-decoration: none;
@@ -89,18 +90,20 @@ margin-right:1%;
 /*This Aside Bar should only hold my projets as a catalouge*/
 #openingAsideBar{
     top:7rem;
-    position:fixed;
+    position:absolute;
     display:flex;
     overflow:hidden;
     align-items:center;
     flex-direction:column;
     height:auto;
     width:20%; 
-    border-style:dotted;
-    background-color:rgba(107, 159, 202, 0.877)
+    transition:0.4s ease-in-out;
+    z-index: 1;
+    
 }
 .asideSection{
-    height:auto;
+    background-color:white;
+   min-height:3rem;
     width:80%;
     display:flex;
     align-content:center;
@@ -108,56 +111,93 @@ margin-right:1%;
     flex-direction: column;
     align-self:flex-start;
     margin-left:2%;
-    transition: 0.5s ease-in-out;
+    border-style:solid;
+    border-width:0.1px;
+    border-radius:1%;
+    transition:all 0.5s ease-in-out;
 }
 .asideSection:hover {
+padding:5%;
 flex-direction:column-reverse;
+height:auto;
 }
 .asideSection:hover  header>a{
 /*    CHANGE HEADING STYLE ON HOVER HERE.*/
-
 } 
 
 .asideSection>header{
     text-align:center;
-    width:60%;
-
-    
+    width:80%;
+    margin-top:5%;
+    transition:all 0.4s ease-in-out;
 }
 .asideSection>header>a{
     text-decoration: none;
     color:black;
-    transition:all 0.5s ease-in-out;
+  
+
 }
 .asideSection>img{
-height:0px;
+height:auto;
 width:0px;
+transition:all 1s ease-in-out;
 } 
 .asideSection:hover img{
   /*CHANGE ASIDE PREVIEW img ON HOVER HERE*/
-  position:relative;
-  left:auto;
-  height:auto;
+
   width:100%;
-  transition:all 0.5s ease-in-out;
+
 }
 .asideSection >content{
+
+    width:80%;
     height:40%;
+    transition:all 0.4s ease-in-out;
 }
 .asideSection>content>p{
+    
 font-size:0em;
 opacity:0;
-
+transition:all 1s ease-in-out;
 
 }
 .asideSection:hover content>p{
 font-size:1em;
 opacity:1;
 }
+
+.projectJumpSection{
+    width:100%;
+    font-size:0;
+    border-style:dotted;
+    opacity:0;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+
+}
+.projectJumpSection > a{
+    margin-left:auto;
+    margin-right:auto;
+    height:100%;
+    width:auto;
+    border-style:dotted;
+    transition:all 0.5s ease-in-out;
+    color:rgb(80, 80, 80);
+}
+.projectJumpSection > a:link{
+    text-decoration:none;
+}
+.asideSection:hover .projectJumpSection{
+    opacity:1;
+    margin:10%;
+    font-size:1.4em;
+}
 /*----------------------ASIDE BAR----------------------CONTENT----------*/
 #aS-projectCover{  /* COVER */
     align-self:center;
     background-color:rgb(230, 185, 157);
+
 }
 #aS-projectCover>header>a{
     text-decoration: none;
@@ -177,9 +217,6 @@ opacity:1;
     top:-4em;
     background-color:rgb(207, 220, 187);
 }
-#aS-projectThree > img{
-
-}
 #aS-projectFour{  /* VIDEO-PORTAL*/
     top:-4em;
     background-color:rgb(207, 205, 187);
@@ -198,6 +235,7 @@ main{
     display:flex;
     flex-direction:column;
     position:absolute;
+    z-index: auto;
 }
 main >section{
     width:76.8vw;
@@ -205,6 +243,7 @@ main >section{
     border-style:dotted;
     display:flex;
     flex-direction:column;
+    
 }   
 .sectionTitle{
 align-self:center;
