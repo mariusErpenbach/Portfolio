@@ -1,13 +1,15 @@
 body{
-    background-color:cadetblue;
+    background-color:#6e7c7c;
 }
 /*----------------------TOP NAV HEADER------------------------------------*/
 nav{
     position:absolute;
-    background-color:#55868a23;
+    background-color:#676e6e;
     top:0;
+    left:0;
     width:100%;
-    border-style:dotted;
+  border-style:solid;
+  border-width:0.2px;
     display:flex;
     justify-content:flex-end;
     flex-direction:row;
@@ -20,7 +22,6 @@ nav{
     display:flex;
     flex-direction:row;
     width:auto;
-border-style:dotted;
 margin-right:1.2%;
 }
 #portfolioName>a{
@@ -102,7 +103,7 @@ margin-right:1%;
     
 }
 .asideSection{
-    background-color:white;
+   
    min-height:3rem;
     width:80%;
     display:flex;
@@ -169,7 +170,7 @@ opacity:1;
 .projectJumpSection{
     width:100%;
     font-size:0;
-    border-style:dotted;
+
     opacity:0;
     display:flex;
     flex-direction:row;
@@ -181,7 +182,7 @@ opacity:1;
     margin-right:auto;
     height:100%;
     width:auto;
-    border-style:dotted;
+  
     transition:all 0.5s ease-in-out;
     color:rgb(80, 80, 80);
 }
@@ -226,38 +227,50 @@ opacity:1;
     background-color:rgb(179, 181, 187);
 }
 
-
+/*----------------------MAIN SECTIONS--------------------------------------*/
 main{
-    background-color:rgba(117, 163, 155, 0.575);
-    border-style:dotted;
-    margin-top:5.7rem;
+
+   
+    margin-top:6.3rem;
     margin-left:21%;
     display:flex;
     flex-direction:column;
     position:absolute;
     z-index: auto;
+    
 }
 main >section{
+    background-color:rgba(116, 115, 114, 0.575);
     width:76.8vw;
     height:90vh;
-    border-style:dotted;
+    border-style:solid;
+    border-width:0.5px;
     display:flex;
     flex-direction:column;
-    
+    margin-bottom:1%;
 }   
+#aboutmeSection{
+
+}
+#workflowSection{
+ 
+}
+
+/*----------------------MAIN SECTION CONTENT--------------------------------------*/
 .sectionTitle{
 align-self:center;
-border-color:rgba(52, 70, 70, 0.315);
-border-style:dotted;
+
 font-size:3.4em;
 margin-top:1%;
 
-color:rgba(52, 70, 70, 0.616);
+color:rgba(162, 167, 167, 0.493);
 }
+/*----------------------MAIN-FOOTER--------------------------------------*/
 #mainFooter{
     align-self:center;
     position:fixed;
     bottom:-8%;
+    right:40%;
     display:flex;
     flex-direction:row;
     border-radius:4%;
@@ -266,39 +279,23 @@ color:rgba(52, 70, 70, 0.616);
     height:10%;
     width:20%;
     transition:0.4s ease-in-out;
+    align-items:flex-end;
 }
-#mainFooter:hover{      /*----------------------------MAIN FOOTER ANIMATIONS-------------------------------------*/
+#mainFooter:hover{
     bottom:0;
 }
-#mainFooter:hover .fa-arrows-alt{
-    font-size:1em;
-}
-#mainFooter:hover .fa-chevron-up{
-    font-size:0em;
-}
-#mainFooterUp{
-    flex:49;
-}
-#mainFooterIcon{
-    flex:2;
-}
-#mainFooterDown{
-    flex:49;
-}
-.fa-chevron-up{
-    font-size:0.7em;
-    position:absolute;
-    top:0;
-    transition:all 0.5s ease-in-out
-}
-.fa-arrows-alt{
-    position:absolute;
-    right:1%;
-    top:2%;
-    font-size:0em;
-    transition:all 0.5s ease-in-out
+#mainFooter >button{
+   margin-right:auto;
+   margin-left:auto;
+    height:60%;
 }
 
+/*----------------------MAIN-FOOTER-ICONS--------------------------------------*/
+.fa-chevron-up{
+ position:absolute;
+ top:0;
+ right:2%;
+}
 #lowerMainFooterArrow{
 top:0.5em;
 }
