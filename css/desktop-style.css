@@ -128,15 +128,14 @@ height:auto;
 
 .asideSection>header{
     text-align:center;
-    width:80%;
+    width:100%;
     margin-top:5%;
     transition:all 0.4s ease-in-out;
+    overflow:hidden;
 }
 .asideSection>header>a{
     text-decoration: none;
     color:black;
-  
-
 }
 .asideSection>img{
 height:auto;
@@ -170,7 +169,6 @@ opacity:1;
 .projectJumpSection{
     width:100%;
     font-size:0;
-
     opacity:0;
     display:flex;
     flex-direction:row;
@@ -198,7 +196,6 @@ opacity:1;
 #aS-projectCover{  /* COVER */
     align-self:center;
     background-color:rgb(230, 185, 157);
-
 }
 #aS-projectCover>header>a{
     text-decoration: none;
@@ -242,8 +239,9 @@ main{
 main >section{
     background-color:rgba(116, 115, 114, 0.575);
     width:76.8vw;
-    height:90vh;
+    height:auto;
     border-style:solid;
+    border-color:rgb(134, 134, 134);
     border-width:0.5px;
     display:flex;
     flex-direction:column;
@@ -253,18 +251,72 @@ main >section{
 
 }
 #workflowSection{
- 
+ margin-left:-21%;
 }
 
 /*----------------------MAIN SECTION CONTENT--------------------------------------*/
 .sectionTitle{
 align-self:center;
-
 font-size:3.4em;
 margin-top:1%;
-
 color:rgba(162, 167, 167, 0.493);
+};
+/*-----------------------------ABOUT ME SECTION --------------------------------------*/
+
+#personalCharacteristics{
+    border-style:dotted;
+    border-color:white;
+    width:35%;
+    height:auto;
+    display:flex;
+
 }
+#personalCharacteristics>div{
+    border-style:solid;
+    border-radius:100%;
+    border-width:0.1px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:1%;
+    position:relative;
+}
+#personalCharacteristics>div>p{
+    width:80%;
+}
+#personalCharacteristics>div>h1{
+    align-items:center;
+}
+#aboutMeMiddle{
+    background-color:rgba(144, 181, 187, 0.959);
+    align-content:center;
+    top:20rem;
+    left:45%;
+    width:6rem;
+    height:6rem;
+}
+#aboutMe-One{
+    left:15%;
+    width:10rem;
+    height:10rem;
+}
+#aboutMe-Two{
+    left:60%;
+    top:-20rem;
+    width:10rem;
+    height:10rem;
+}
+#aboutMe-Three{
+    left:60%;
+    width:10rem;
+    height:10rem;
+}
+#aboutMe-Four{
+    left:25%;
+    width:10rem;
+    height:10rem;
+}
+
 /*----------------------MAIN-FOOTER--------------------------------------*/
 #mainFooter{
     align-self:center;
@@ -274,8 +326,8 @@ color:rgba(162, 167, 167, 0.493);
     display:flex;
     flex-direction:row;
     border-radius:4%;
-    border-style:dotted;
-    border-color:black;
+    border-style:solid;
+    border-width:0.5px;
     height:10%;
     width:20%;
     transition:0.4s ease-in-out;
@@ -288,8 +340,18 @@ color:rgba(162, 167, 167, 0.493);
    margin-right:auto;
    margin-left:auto;
     height:60%;
+    border-style:solid;
+    border-width:0.1px;
+    border-color:rgb(134, 134, 134);
+    background-color:transparent;
 }
-
+#mainFooter >button>a:visited{
+    color:white;
+}
+#mainFooter >button>a:link{
+    text-decoration:none;
+    color:white;
+}
 /*----------------------MAIN-FOOTER-ICONS--------------------------------------*/
 .fa-chevron-up{
  position:absolute;
