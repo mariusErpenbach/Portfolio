@@ -272,14 +272,18 @@ color:rgba(162, 167, 167, 0.493);
 
 }
 #personalCharacteristics>div{
-    border-style:solid;
+    border-style:groove;
+    border-color:rgb(218, 226, 185);
+    box-shadow: 0.3em 0.3em #666959;
     border-radius:100%;
     border-width:0.1px;
     display:flex;
+    flex-wrap:wrap;
     align-items:center;
     justify-content:center;
     padding:1%;
     position:relative;
+    overflow:hidden;
 }
 #personalCharacteristics>div>p{
     width:80%;
@@ -288,7 +292,7 @@ color:rgba(162, 167, 167, 0.493);
     align-items:center;
 }
 #aboutMeMiddle{
-    background-color:rgba(144, 181, 187, 0.959);
+    background-color:rgb(207, 220, 157);
     align-content:center;
     top:20rem;
     left:45%;
@@ -296,25 +300,44 @@ color:rgba(162, 167, 167, 0.493);
     height:6rem;
 }
 #aboutMe-One{
+    background-color:rgb(207, 220, 157);
     left:15%;
     width:10rem;
     height:10rem;
 }
 #aboutMe-Two{
-    left:60%;
-    top:-20rem;
+    background-color:rgb(207, 220, 157);
+    left:55%;
+    top:-17rem;
     width:10rem;
     height:10rem;
+
+}
+#aboutMe-Two>.fa-music{
+    position:absolute;
+    font-size:10rem;
+    opacity:0.2;
+   
 }
 #aboutMe-Three{
+    background-color:rgb(207, 220, 157);
     left:60%;
-    width:10rem;
-    height:10rem;
+    width:7rem;
+    height:7rem;
+}
+#aboutMe-Three>.fa-biking{
+    position:absolute;
+    right:-20%;
+    font-size:7rem;
+    opacity:0.2;
+    transform:rotate(-40deg)
 }
 #aboutMe-Four{
+    background-color:rgb(207, 220, 157);
+    top:-12rem;
     left:25%;
-    width:10rem;
-    height:10rem;
+    width:7rem;
+    height:7rem;
 }
 
 /*----------------------MAIN-FOOTER--------------------------------------*/
