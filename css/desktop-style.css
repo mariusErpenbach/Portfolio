@@ -34,7 +34,6 @@ margin-right:1.2%;
 }
 nav>img{
 margin-right:auto;
-margin-left:1%;
 }
 /*----------------------TOP NAV HEADER------------------MID------------*/
 /* #nav-mid-section{
@@ -127,6 +126,10 @@ height:auto;
 }
 .asideSection:hover  header>a{
 /*    CHANGE HEADING STYLE ON HOVER HERE.*/
+
+text-decoration-line: underline;
+
+
 } 
 
 .asideSection>header{
@@ -137,6 +140,7 @@ height:auto;
     overflow:hidden;
 }
 .asideSection>header>a{
+    
     text-decoration: none;
     color:black;
 }
@@ -240,7 +244,8 @@ main{
     
 }
 main >section{
-    background-color:rgba(116, 115, 114, 0.575);
+  
+    background-color: rgb(105, 114, 114);
     box-shadow: 0.6em 0.6em #626360;
     width:76.8vw;
     height:auto;
@@ -257,9 +262,7 @@ main>section:hover{
 }
 #aboutmeSection{
 }
-#workflowSection{
- margin-left:-21%;
-}
+
 
 /*----------------------MAIN SECTION CONTENT--------------------------------------*/
 .sectionTitle{
@@ -346,6 +349,24 @@ color:rgba(162, 167, 167, 0.493);
     width:7rem;
     height:7rem;
 }
+/*----------------------WORKFLOW SECTION--------------------------------------*/
+#workflowSection{
+    margin-left:-27%;
+   }
+/*----------------------CONTACT ME SECTION--------------------------------------*/
+#contactMeSection{
+height:auto;
+
+flex-direction:column;
+}
+#contactMeSection >form{
+    align-self:center;
+    margin-top:5%;
+    height:80vh;
+    width:90%;
+    background-color:white;
+    position:relative;
+}
 
 /*----------------------MAIN-FOOTER--------------------------------------*/
 #mainFooter{
@@ -366,6 +387,9 @@ color:rgba(162, 167, 167, 0.493);
 #mainFooter:hover{
     bottom:0;
 }
+#mainFooter:hover .fa-chevron-up{
+opacity:0;
+}
 #mainFooter >button{
    margin-right:auto;
    margin-left:auto;
@@ -373,7 +397,7 @@ color:rgba(162, 167, 167, 0.493);
     border-style:solid;
     border-width:0.1px;
     border-color:rgb(134, 134, 134);
-    background-color:transparent;
+    background-color:rgb(122, 72, 72);
 }
 #mainFooter >button>a:visited{
     color:white;
@@ -386,9 +410,14 @@ color:rgba(162, 167, 167, 0.493);
 .fa-chevron-up{
  position:absolute;
  top:0;
- right:2%;
+ right:47%;
+ opacity:1;
+
+ transition:all 0.5s ease-in-out;
 }
 #lowerMainFooterArrow{
+    opacity:1;
+    transition:all 0.5s ease-in-out;
 top:0.5em;
 }
 
