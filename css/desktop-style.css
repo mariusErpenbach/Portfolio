@@ -352,20 +352,52 @@ color:rgba(162, 167, 167, 0.493);
 /*----------------------WORKFLOW SECTION--------------------------------------*/
 #workflowSection{
     margin-left:-27%;
+    height:100vh;
    }
 /*----------------------CONTACT ME SECTION--------------------------------------*/
 #contactMeSection{
 height:auto;
-
 flex-direction:column;
+}
+#formSelection{
+    display:flex;
+    flex-direction:row;
+   font-size:1.7em;
+   margin-left:5%;
+   margin-bottom:-5%;
+}
+#socialToggle{
+    border-color:white;
+    border-style:dotted;
+}
+#directToggle{
+    border-color:white;
+    border-style:dotted;
 }
 #contactMeSection >form{
     align-self:center;
     margin-top:5%;
     height:80vh;
     width:90%;
-    background-color:white;
-    position:relative;
+   border-style:dotted;
+   border-color:grey;
+    padding:1%;
+}
+/*----------------------CONTACT ME SECTION ASIDE SECTION--------------------------------------*/
+#contactMeSection>aside{
+    margin-top:5%;
+    position:absolute;
+    right:102%;
+    width:18vw;
+    height:auto;
+    border-style:dotted;
+    border-color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#contactMeSection>aside>h1{
+color:white;
 }
 
 /*----------------------MAIN-FOOTER--------------------------------------*/
