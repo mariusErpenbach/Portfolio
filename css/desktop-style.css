@@ -351,7 +351,7 @@ color:rgba(162, 167, 167, 0.493);
 }
 /*----------------------WORKFLOW SECTION--------------------------------------*/
 #workflowSection{
-    margin-left:-27%;
+    margin-left:-26%;
     height:100vh;
    }
 /*----------------------CONTACT ME SECTION--------------------------------------*/
@@ -359,11 +359,11 @@ color:rgba(162, 167, 167, 0.493);
 height:auto;
 flex-direction:column;
 }
-#formSelection{
+#formTitle{
     display:flex;
     flex-direction:row;
    font-size:1.7em;
-   margin-left:5%;
+   margin-left:7%;
    margin-bottom:-5%;
 }
 #socialToggle{
@@ -372,34 +372,106 @@ flex-direction:column;
 }
 #directToggle{
     border-color:white;
-    border-style:dotted;
+    border-style:solid;
 }
-#contactMeSection >form{
+/* #contactMeSection >form{
     align-self:center;
-    margin-top:5%;
+
     height:80vh;
-    width:90%;
+    
    border-style:dotted;
    border-color:grey;
+
+} */
+#contactMeSection>div{
+    display:flex;
+    flex-direction:row;
+    width:80%;
+    align-self:center;
+}
+#directMessageForm{
+    flex:48;
     padding:1%;
+    margin-top:7%;
+    height:80vh;
+    margin-left:auto;
+    margin-right:auto;
+display:flex;
+flex-direction:column;
+border-color:white;
+border-style:solid;
+}
+#directMessageForm>section>p{
+}
+#directMessageFormInfo{
+    text-align:center;
+    height:auto;
+    background-color:#E6B99D;
+    border-radius:35%;
+
+}
+#directMessageForm>section{
+    margin:1%;
+    padding:5%;
+    display:flex;
+    flex-direction:column;
+    border-style:dotted;
+    border-color:yellowgreen;
+}
+#visualMid{
+    flex:2;
+}
+#bonusQuestions{
+    padding:1%;
+    flex:48;
+    margin-top:7%;
+    background-color:blueviolet;
+    height:80vh;
 }
 /*----------------------CONTACT ME SECTION ASIDE SECTION--------------------------------------*/
 #contactMeSection>aside{
-    margin-top:5%;
+    background-color:#FFFFFF;
     position:absolute;
+    margin-top:0.5%;
     right:102%;
-    width:18vw;
+    width:15vw;
     height:auto;
-    border-style:dotted;
-    border-color:white;
+    border-style:solid;
+    border-color:black;
     display:flex;
     flex-direction:column;
     align-items:center;
 }
-#contactMeSection>aside>h1{
-color:white;
+.socialAsideButton{
+    height:6em;
+    width:6em;
+    margin:8%;
 }
-
+#contactMeSection>aside>h1{
+color:black;
+}
+#contactMeSection>aside>p{
+    font-size:1.2em;
+    width:75%;
+}
+#contactMeSection>aside>div{
+    display:flex;
+    flex-wrap:wrap;
+}
+/*----------------------CONTACT ME SECTION ASIDE SECTION ICONS--------------------------------------*/
+#contactMeSection>aside>div>i{
+    font-size:6em;
+}
+.fa-facebook{
+    color:#1199F6;
+}
+.fa-linkedin{
+    color:#0A66C2;
+}
+.fa-mail-bulk{
+    color:burlywood;
+    margin-left:-10%;
+}
 /*----------------------MAIN-FOOTER--------------------------------------*/
 #mainFooter{
     align-self:center;

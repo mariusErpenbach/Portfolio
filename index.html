@@ -114,17 +114,44 @@
 
 
         <section id="contactMeSection">
-            <div class="sectionTitle"> Contact Me </div>
-            <div id="formSelection">
+            <!-- <div class="sectionTitle"> Contact Me </div> -->
+            <div id="formTitle">
                 <div id="directToggle">Direct Message</div>
         </div>
-            <form  id="socialContactForm">
-            </form>
+        
+        <div>
+        <form id="directMessageForm">
+            <div id="directMessageFormInfo">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit molestias doloribus in veritatis eius earum accusamus expedita! Aperiam, illo atque?</p>
+            </div>
+            <section>
+            <label for="nameInput">How can I call you?</label>
+            <input type="text" name="nameInput"> 
+            </section>
+            <section>
+            <label for="userEmail">How can I reach you back?</label>
+            <input type="email" name="userEmail" placeholder="email@example.com">
+        </section>
+        <section>
+            <label for="contactPurpose">Purpose of contact</label>
+            <input type="text" id="contactPurpose"/>
+        </section>
+        <section>
+            <label for="yourMessage">Your Message to me:</label>
+            <textarea name="yourMessage" id="" cols="30" rows="10"></textarea>
+        </section>
+            <button type="submit">Send message</button>
+        </form>
+        <div id="visualMid"></div>
+        <form id="bonusQuestions">
+        </form>
+    </div>
             <aside id="socialMediaButtons"> <h1> My Social Media</h1>
-            <div id="facebookLink"></div>
-            <div id="LinkedInLink"></div>
-            <div id="gitHubLink"></div>
-            <div id="webmailLink"></div>
+            <div class="socialAsideButton" id="facebookLink"><i class="fab fa-facebook"></i></div>
+            <div class="socialAsideButton" id="LinkedInLink"><i class="fab fa-linkedin"></i></div>
+            <div class="socialAsideButton" id="gitHubLink"><i class="fab fa-github"></i></div>
+            <div class="socialAsideButton" id="webmailLink"><i class="fas fa-mail-bulk"></i></div>
+            <p> Don't be shy. Feel free to contact me on either platform</p>
             </aside>
         </section>
     </main>
