@@ -116,13 +116,14 @@
         <section id="contactMeSection">
             <!-- <div class="sectionTitle"> Contact Me </div> -->
             <div id="formTitle">
-                <div id="directToggle">Direct Message</div>
+                <div id="directMessageHeader">Direct Message</div>
+                <div id="bonusFormHeader">Feedback</div>
         </div>
         
         <div>
         <form id="directMessageForm">
             <div id="directMessageFormInfo">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit molestias doloribus in veritatis eius earum accusamus expedita! Aperiam, illo atque?</p>
+                <p>You can use this form to directly send me a message. I check my mails on a daily bases :) </p>
             </div>
             <section>
             <label for="nameInput">How can I call you?</label>
@@ -140,10 +141,46 @@
             <label for="yourMessage">Your Message to me:</label>
             <textarea name="yourMessage" id="" cols="30" rows="10"></textarea>
         </section>
-            <button type="submit">Send message</button>
+            <button type="submit" id="directMessageButton">Send message</button>
         </form>
         <div id="visualMid"></div>
         <form id="bonusQuestions">
+            <div id="bonusLetterContainer">
+                <div class="bonusLetter"><p>B</p></div>
+                <div class="bonusLetter"><p>O</p></div>
+                <div class="bonusLetter"><p>N</p></div>
+                <div class="bonusLetter"><p>U</p></div>
+                <div class="bonusLetter"><p>S</p></div>
+            </div>
+                <section>
+                    <label for="style">Style</label>
+                    <div>
+                        <div class="rangeInfo"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div></div>
+                    <input name="style" type="range" min="1" max="10" value="1">
+                    </div>
+                 </section>
+            <section>
+                <label for="style">Overview</label>
+                <div>
+                    <div class="rangeInfo"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div></div>
+                <input name="style" type="range" min="1" max="10" value="1">
+                </div>
+            </section>
+            <section>
+                <label for="style">Color Choice</label>
+                <div>
+                    <div class="rangeInfo"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div></div>
+                <input name="style" type="range" min="1" max="10" value="1">
+                </div>
+            </section>
+            <section>
+                <label for="style">Icon Quality</label>
+                <div>
+                    <div class="rangeInfo"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div></div>
+                <input name="style" type="range" min="1" max="10" value="1">
+                </div>
+            </section>
+           
         </form>
     </div>
             <aside id="socialMediaButtons"> <h1> My Social Media</h1>
