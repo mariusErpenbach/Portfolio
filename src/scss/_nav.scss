@@ -1,0 +1,33 @@
+/*----------------------TOP NAV HEADER------------------------------------*/
+nav{
+    position:absolute;
+    background-color:#676e6e;
+    top:0;
+    left:0;
+    width:100%;
+  border-style:solid;
+  border-width:0.2px;
+    display:flex;
+    justify-content:flex-end;
+    flex-direction:row;
+    height:6rem;
+    z-index: 2;
+}
+#portfolioName{
+    overflow:hidden;
+    display:flex;
+    flex-direction:row;
+    width:auto;
+margin-right:1.2%;
+}
+#portfolioName>a{
+    font-size:6rem;
+    color:rgba(252, 252, 252, 0.719);
+  
+}
+    #portfolioName>a:link{
+    text-decoration: none;
+}
+nav>img{
+margin-right:auto;
+}

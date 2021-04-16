@@ -1,0 +1,205 @@
+/*----------------------CONTACT ME SECTION--------------------------------------*/
+#contactMeSection{
+min-height:100vh;
+    height:auto;
+flex-direction:column;
+flex-wrap:wrap;
+}
+#formTitle{
+    display:flex;
+    flex-direction:row;
+   font-size:1.7em;
+    
+   margin-bottom:-5%;
+   margin-top:5%;
+
+   
+}
+
+#directMessageHeader{
+        border-color:rgba(39, 39, 39, 0.233);
+        border-style:solid;
+}
+#bonusFormHeader{
+    margin-left:auto;
+    border-color:rgb(77, 72, 72);
+    border-style:solid;
+}
+
+
+
+#contactMeSection>div{
+    display:flex;
+    flex-direction:row;
+    width:80%;
+    align-self:center;
+}
+/*-------------------------------------LEFT SIDE*/
+#directMessageForm{
+    flex:48;
+    padding:1%;
+    margin-top:7%;
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+display:flex;
+flex-direction:column;
+border-color:white;
+border-style:solid;
+}
+#directMessageFormInfo{
+    text-align:center;
+    height:15%;
+    background-color:#E6B99D;
+    border-radius:50%;
+    margin-bottom:2%; 
+    display:flex;  
+    justify-content:center;
+}
+#directMessageFormInfo>p{
+    width:70%;
+}
+#directMessageForm>section{
+    margin:1%;
+    padding:5%;
+    display:flex;
+    flex-direction:column;
+    border-style:solid;
+    border-color:rgba(46, 62, 73, 0.39);
+    background-color:rgb(83, 102, 117);
+}
+#directMessageForm>section>label{
+    color:white;
+    margin-bottom:1%;
+}
+#directMessageButton{
+    width:auto;
+    height:7%;
+    align-self:center;
+    background-color:rgb(83, 102, 117);
+    color:white;
+}
+/*----------------------------------------------------------------------MID*/
+#visualMid{
+    flex:2;
+}
+/*----------------------------------------------------------------------RIGHT SIDE*/
+#bonusQuestions{
+    padding:1%;
+    flex:48;
+    margin-top:7%;
+    height:100%;
+    background-color:rgb(83, 102, 117);
+    display:flex;
+    flex-direction:column;
+}
+#bonusLetterContainer{
+    display:flex;
+    flex-direction:row;
+}
+.bonusLetter{
+    display:flex;
+    flex:auto;
+    justify-content:center;
+    width:1em;
+    height:4em;
+    border-radius:100%;
+    border-style:solid;
+    border-color:black;
+    overflow:hidden;
+}
+.bonusLetter>p{
+    align-self:center;
+    font-size:5em;
+}
+
+#bonusFeedbackForm{
+    border-style:dotted;
+    border-color:white;
+    height:auto;
+    display:flex;
+}
+#bonusQuestions>section{
+
+    margin:1%;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color:rgb(65, 47, 47);
+    justify-content:flex-end;
+    
+}
+
+#bonusQuestions>section>label{
+    color:white;
+    align-self:center;
+    flex:50;
+    display:flex;
+    margin-right:2%;
+    justify-content:flex-end;
+  margin-left:auto;
+}
+#bonusQuestions>section>div{
+    flex:50;
+    display:flex;
+    flex-direction:columN;
+}
+#bonusQuestions>section>div>input{
+    justify-self:flex-end;
+    width:95%;
+    margin-top:-5%;
+}
+.rangeInfo{
+    align-self:center;
+    width:95%;
+    display:flex;
+    flex-direction:row;
+}
+.rangeInfo>div{
+    flex:10;
+}
+
+/*----------------------CONTACT ME SECTION ASIDE SECTION--------------------------------------*/
+#contactMeSection>aside{
+    background-color:#FFFFFF;
+    position:absolute;
+    margin-top:0.5%;
+    right:102%;
+    width:15vw;
+    height:auto;
+    border-style:solid;
+    border-color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.socialAsideButton{
+    height:6em;
+    width:6em;
+    margin:8%;
+}
+#contactMeSection>aside>h1{
+color:black;
+}
+#contactMeSection>aside>p{
+    font-size:1.2em;
+    width:75%;
+}
+#contactMeSection>aside>div{
+    display:flex;
+    flex-wrap:wrap;
+}
+/*----------------------CONTACT ME SECTION ASIDE SECTION ICONS--------------------------------------*/
+#contactMeSection>aside>div>i{
+    font-size:6em;
+}
+.fa-facebook{
+    color:#1199F6;
+}
+.fa-linkedin{
+    color:#0A66C2;
+}
+.fa-mail-bulk{
+    color:burlywood;
+    margin-left:-10%;
+}

@@ -1,0 +1,139 @@
+#openingAsideBar{
+    top:7rem;
+    position:absolute;
+    display:flex;
+   
+    align-items:center;
+    flex-direction:column;
+    height:auto;
+    width:20%; 
+    transition:0.4s ease-in-out;
+    z-index: 1;
+    
+}
+.asideSection{
+    box-shadow:0.1em 0.1em grey;
+   min-height:3rem;
+    width:80%;
+    display:flex;
+    align-content:center;
+    align-items:center;
+    flex-direction: column;
+    align-self:flex-start;
+    margin-left:2%;
+    border-style:solid;
+    border-width:0.1px;
+    border-radius:1%;
+    transition:all 0.5s ease-in-out; 
+}
+.asideSection:hover {
+padding:5%;
+flex-direction:column-reverse;
+height:auto;
+}
+.asideSection:hover  header>a{
+/*    CHANGE HEADING STYLE ON HOVER HERE.*/
+
+text-decoration-line: underline;
+
+
+} 
+
+.asideSection>header{
+    text-align:center;
+    width:100%;
+    margin-top:5%;
+    transition:all 0.4s ease-in-out;
+    overflow:hidden;
+}
+.asideSection>header>a{
+    
+    text-decoration: none;
+    color:black;
+}
+.asideSection>img{
+height:auto;
+width:0px;
+transition:all 1s ease-in-out;
+} 
+.asideSection:hover img{
+  /*CHANGE ASIDE PREVIEW img ON HOVER HERE*/
+
+  width:100%;
+
+}
+.asideSection >content{
+
+    width:80%;
+    height:40%;
+    transition:all 0.4s ease-in-out;
+}
+.asideSection>content>p{
+    
+font-size:0em;
+opacity:0;
+transition:all 1s ease-in-out;
+
+}
+.asideSection:hover content>p{
+font-size:1em;
+opacity:1;
+}
+
+.projectJumpSection{
+    width:100%;
+    font-size:0;
+    opacity:0;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+
+}
+.projectJumpSection > a{
+    margin-left:auto;
+    margin-right:auto;
+    height:100%;
+    width:auto;
+  
+    transition:all 0.5s ease-in-out;
+    color:rgb(80, 80, 80);
+}
+.projectJumpSection > a:link{
+    text-decoration:none;
+}
+.asideSection:hover .projectJumpSection{
+    opacity:1;
+    margin:10%;
+    font-size:1.4em;
+}
+/*----------------------ASIDE BAR----------------------CONTENT----------*/
+#aS-projectCover{  /* COVER */
+    align-self:center;
+    background-color:rgb(230, 185, 157);
+}
+#aS-projectCover>header>a{
+    text-decoration: none;
+}
+
+#aS-projectOne{     /* DRUM-COMPUTER*/
+    display:flex;
+    top:-4em;
+
+    background-color:rgb(230, 220, 157);
+}
+#aS-projectTwo{  /* PERIODIC TABLE*/
+    top:-4em;
+    background-color:rgb(207, 220, 157);
+} 
+#aS-projectThree{  /* ACTIVE PORTRAIT*/
+    top:-4em;
+    background-color:rgb(207, 220, 187);
+}
+#aS-projectFour{  /* VIDEO-PORTAL*/
+    top:-4em;
+    background-color:rgb(207, 205, 187);
+}
+#aS-projectFive{  /* SHOPFOLIO*/
+    top:-4em;
+    background-color:rgb(179, 181, 187);
+}
