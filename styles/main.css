@@ -1,0 +1,603 @@
+body {
+  background-color: #6e7c7c;
+}
+
+/*----------------------TOP NAV HEADER------------------------------------*/
+nav {
+  position: absolute;
+  background-color: #676e6e;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-style: solid;
+  border-width: 0.2px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 6rem;
+  z-index: 2;
+}
+
+#portfolioName {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin-right: 1.2%;
+}
+
+#portfolioName > a {
+  font-size: 6rem;
+  color: rgba(252, 252, 252, 0.719);
+}
+
+#portfolioName > a:link {
+  text-decoration: none;
+}
+
+nav > img {
+  margin-right: auto;
+}
+
+#openingAsideBar {
+  top: 7rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 20%;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.asideSection {
+  box-shadow: 0.1em 0.1em grey;
+  min-height: 3rem;
+  width: 80%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 2%;
+  border-style: solid;
+  border-width: 0.1px;
+  border-radius: 1%;
+  transition: all 0.5s ease-in-out;
+}
+
+.asideSection:hover {
+  padding: 5%;
+  flex-direction: column-reverse;
+  height: auto;
+}
+
+.asideSection:hover header > a {
+  /*    CHANGE HEADING STYLE ON HOVER HERE.*/
+  text-decoration-line: underline;
+}
+
+.asideSection > header {
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.asideSection > header > a {
+  text-decoration: none;
+  color: black;
+}
+
+.asideSection > img {
+  height: auto;
+  width: 0px;
+  transition: all 1s ease-in-out;
+}
+
+.asideSection:hover img {
+  /*CHANGE ASIDE PREVIEW img ON HOVER HERE*/
+  width: 100%;
+}
+
+.asideSection > content {
+  width: 80%;
+  height: 40%;
+  transition: all 0.4s ease-in-out;
+}
+
+.asideSection > content > p {
+  font-size: 0em;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.asideSection:hover content > p {
+  font-size: 1em;
+  opacity: 1;
+}
+
+.projectJumpSection {
+  width: 100%;
+  font-size: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.projectJumpSection > a {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: auto;
+  transition: all 0.5s ease-in-out;
+  color: #505050;
+}
+
+.projectJumpSection > a:link {
+  text-decoration: none;
+}
+
+.asideSection:hover .projectJumpSection {
+  opacity: 1;
+  margin: 10%;
+  font-size: 1.4em;
+}
+
+/*----------------------ASIDE BAR----------------------CONTENT----------*/
+#aS-projectCover {
+  /* COVER */
+  align-self: center;
+  background-color: #e6b99d;
+}
+
+#aS-projectCover > header > a {
+  text-decoration: none;
+}
+
+#aS-projectOne {
+  /* DRUM-COMPUTER*/
+  display: flex;
+  top: -4em;
+  background-color: #e6dc9d;
+}
+
+#aS-projectTwo {
+  /* PERIODIC TABLE*/
+  top: -4em;
+  background-color: #cfdc9d;
+}
+
+#aS-projectThree {
+  /* ACTIVE PORTRAIT*/
+  top: -4em;
+  background-color: #cfdcbb;
+}
+
+#aS-projectFour {
+  /* VIDEO-PORTAL*/
+  top: -4em;
+  background-color: #cfcdbb;
+}
+
+#aS-projectFive {
+  /* SHOPFOLIO*/
+  top: -4em;
+  background-color: #b3b5bb;
+}
+
+/*----------------------MAIN SECTIONS--------------------------------------*/
+main {
+  margin-top: 6.3rem;
+  margin-left: 21%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: auto;
+}
+
+main > section {
+  background-color: #697272;
+  box-shadow: 0.6em 0.6em #626360;
+  width: 76.8vw;
+  height: auto;
+  border-style: solid;
+  border-color: #868686;
+  border-width: 0.5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+  transition: all 1s ease-in-out;
+}
+
+main > section:hover {
+  box-shadow: -0.35em -0.2em #626360;
+}
+
+/*----------------------MAIN SECTION CONTENT--------------------------------------*/
+.sectionTitle {
+  align-self: center;
+  font-size: 3.4em;
+  margin-top: 1%;
+  color: rgba(162, 167, 167, 0.493);
+}
+
+/*-----------------------------ABOUT ME SECTION --------------------------------------*/
+#personalCharacteristics {
+  border-style: dotted;
+  border-color: white;
+  width: 35%;
+  height: auto;
+  display: flex;
+}
+
+#personalCharacteristics > div {
+  border-style: groove;
+  border-color: #dae2b9;
+  box-shadow: 0.3em 0.3em #666959;
+  border-radius: 100%;
+  border-width: 0.1px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  position: relative;
+  overflow: hidden;
+}
+
+#personalCharacteristics > div > p {
+  width: 80%;
+}
+
+#personalCharacteristics > div > h1 {
+  align-items: center;
+}
+
+#aboutMeMiddle {
+  background-color: #cfdc9d;
+  align-content: center;
+  top: 20rem;
+  left: 45%;
+  width: 6rem;
+  height: 6rem;
+}
+
+#aboutMe-One {
+  background-color: #cfdc9d;
+  left: 15%;
+  width: 10rem;
+  height: 10rem;
+}
+
+#aboutMe-Two {
+  background-color: #cfdc9d;
+  left: 55%;
+  top: -17rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+#aboutMe-Two > .fa-music {
+  position: absolute;
+  font-size: 10rem;
+  opacity: 0.2;
+}
+
+#aboutMe-Three {
+  background-color: #cfdc9d;
+  left: 60%;
+  width: 7rem;
+  height: 7rem;
+}
+
+#aboutMe-Three > .fa-biking {
+  position: absolute;
+  right: -20%;
+  font-size: 7rem;
+  opacity: 0.2;
+  transform: rotate(-40deg);
+}
+
+#aboutMe-Four {
+  background-color: #cfdc9d;
+  top: -12rem;
+  left: 25%;
+  width: 7rem;
+  height: 7rem;
+}
+
+/*----------------------WORKFLOW SECTION--------------------------------------*/
+#workflowSection {
+  margin-left: -26%;
+  height: 100vh;
+}
+
+/*----------------------CONTACT ME SECTION--------------------------------------*/
+#contactMeSection {
+  min-height: 100vh;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#formTitle {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.7em;
+  margin-bottom: -5%;
+  margin-top: 5%;
+}
+
+#directMessageHeader {
+  border-color: rgba(39, 39, 39, 0.233);
+  border-style: solid;
+}
+
+#bonusFormHeader {
+  margin-left: auto;
+  border-color: #4d4848;
+  border-style: solid;
+}
+
+#contactMeSection > div {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-self: center;
+}
+
+/*-------------------------------------LEFT SIDE*/
+#directMessageForm {
+  flex: 48;
+  padding: 1%;
+  margin-top: 7%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  border-color: white;
+  border-style: solid;
+}
+
+#directMessageFormInfo {
+  text-align: center;
+  height: 15%;
+  background-color: #E6B99D;
+  border-radius: 50%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+#directMessageFormInfo > p {
+  width: 70%;
+}
+
+#directMessageForm > section {
+  margin: 1%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: rgba(46, 62, 73, 0.39);
+  background-color: #536675;
+}
+
+#directMessageForm > section > label {
+  color: white;
+  margin-bottom: 1%;
+}
+
+#directMessageButton {
+  width: auto;
+  height: 7%;
+  align-self: center;
+  background-color: #536675;
+  color: white;
+}
+
+/*----------------------------------------------------------------------MID*/
+#visualMid {
+  flex: 2;
+}
+
+/*----------------------------------------------------------------------RIGHT SIDE*/
+#bonusQuestions {
+  padding: 1%;
+  flex: 48;
+  margin-top: 7%;
+  height: 100%;
+  background-color: #536675;
+  display: flex;
+  flex-direction: column;
+}
+
+#bonusLetterContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.bonusLetter {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  width: 1em;
+  height: 4em;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: black;
+  overflow: hidden;
+}
+
+.bonusLetter > p {
+  align-self: center;
+  font-size: 5em;
+}
+
+#bonusFeedbackForm {
+  border-style: dotted;
+  border-color: white;
+  height: auto;
+  display: flex;
+}
+
+#bonusQuestions > section {
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #412f2f;
+  justify-content: flex-end;
+}
+
+#bonusQuestions > section > label {
+  color: white;
+  align-self: center;
+  flex: 50;
+  display: flex;
+  margin-right: 2%;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+#bonusQuestions > section > div {
+  flex: 50;
+  display: flex;
+  flex-direction: columN;
+}
+
+#bonusQuestions > section > div > input {
+  justify-self: flex-end;
+  width: 95%;
+  margin-top: -5%;
+}
+
+.rangeInfo {
+  align-self: center;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+}
+
+.rangeInfo > div {
+  flex: 10;
+}
+
+/*----------------------CONTACT ME SECTION ASIDE SECTION--------------------------------------*/
+#contactMeSection > aside {
+  background-color: #FFFFFF;
+  position: absolute;
+  margin-top: 0.5%;
+  right: 102%;
+  width: 15vw;
+  height: auto;
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialAsideButton {
+  height: 6em;
+  width: 6em;
+  margin: 8%;
+}
+
+#contactMeSection > aside > h1 {
+  color: black;
+}
+
+#contactMeSection > aside > p {
+  font-size: 1.2em;
+  width: 75%;
+}
+
+#contactMeSection > aside > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*----------------------CONTACT ME SECTION ASIDE SECTION ICONS--------------------------------------*/
+#contactMeSection > aside > div > i {
+  font-size: 6em;
+}
+
+.fa-facebook {
+  color: #1199F6;
+}
+
+.fa-linkedin {
+  color: #0A66C2;
+}
+
+.fa-mail-bulk {
+  color: burlywood;
+  margin-left: -10%;
+}
+
+/*----------------------MAIN-FOOTER--------------------------------------*/
+#mainFooter {
+  align-self: center;
+  position: fixed;
+  bottom: -8%;
+  right: 40%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 4%;
+  border-style: solid;
+  border-width: 0.5px;
+  height: 10%;
+  width: 20%;
+  transition: 0.4s ease-in-out;
+  align-items: flex-end;
+}
+
+#mainFooter:hover {
+  bottom: 0;
+}
+
+#mainFooter:hover .fa-chevron-up {
+  opacity: 0;
+}
+
+#mainFooter > button {
+  margin-right: auto;
+  margin-left: auto;
+  height: 60%;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: #868686;
+  background-color: #7a4848;
+}
+
+#mainFooter > button > a:visited {
+  color: white;
+}
+
+#mainFooter > button > a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/*----------------------MAIN-FOOTER-ICONS--------------------------------------*/
+.fa-chevron-up {
+  position: absolute;
+  top: 0;
+  right: 47%;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+#lowerMainFooterArrow {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  top: 0.5em;
+}
+
+/*# sourceMappingURL=main.css.map */
