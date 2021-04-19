@@ -6,32 +6,29 @@
     width:100%;
     height:90vh;
     display:flex;
-}
-#personalCharacteristics>div{
-    border-style:groove;
-    border-color:rgb(218, 226, 185);
-    box-shadow: 0.3em 0.3em #666959;
-    border-radius:100%;
-    border-width:0.1px;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:center;
-    padding:1%;
-    position:relative;
-    overflow:hidden;
-}
-#personalCharacteristics>div>p{
-    width:80%;
-}
-#personalCharacteristics>div>h1{
-    align-items:center;
+    div{
+        border-style:groove;
+        border-color:rgb(218, 226, 185);
+        box-shadow: 0.3em 0.3em #666959;
+        border-radius:100%;
+        border-width:0.1px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:1%;
+        position:absolute;
+        overflow:hidden;
+        p{
+            width:80%;
+        }
+        h1{
+            align-items:center;
+        }
+    }
 }
 #aboutMeMiddle{
     background-color:rgb(207, 220, 157);
     align-content:center;
-    top:20rem;
-    left:45%;
     width:6rem;
     height:6rem;
 }
@@ -42,9 +39,6 @@
 }
 #aboutMe-Two{
     background-color:rgb(207, 220, 157);
-    position:absolute;
-    left:45%;
-    top:8%;
     width:10rem;
     height:10rem;
 }
@@ -52,11 +46,8 @@
     position:absolute;
     font-size:10rem;
     opacity:0.2;
-   
 }
 #aboutMe-Three{
-    position:absolute;
-    top:65%;
     background-color:rgb(207, 220, 157);
     width:7rem;
     height:7rem;
@@ -69,9 +60,6 @@
     transform:rotate(-40deg)
 }
 #aboutMe-Four{
-    position:absolute;
-    top:65%;
-    right:-25%;
     background-color:rgb(207, 220, 157);
     width:7rem;
     height:7rem;

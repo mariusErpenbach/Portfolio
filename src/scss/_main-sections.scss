@@ -8,22 +8,23 @@ main{
     flex-direction:column;
     position:absolute;
     z-index: auto;
-    
-}
-main >section{
+    section{
   
-    background-color: rgb(105, 114, 114);
-    box-shadow: 0.6em 0.6em #626360;
-    width:76.8vw;
-    height:auto;
-    border-style:solid;
-    border-color:rgb(134, 134, 134);
-    border-width:0.5px;
-    display:flex;
-    flex-direction:column;
-    margin-bottom:1%;
-    transition:all 1s ease-in-out
-}  
+        background-color: rgb(105, 114, 114);
+        box-shadow: 0.6em 0.6em #626360;
+        width:77vw;
+        height:auto;
+        border-style:solid;
+        border-color:rgb(134, 134, 134);
+        border-width:0.5px;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        margin-bottom:1%;
+        transition:all 1s ease-in-out
+    }
+}
+
 main>section:hover{
     box-shadow:-0.35em -0.2em #626360;
 }

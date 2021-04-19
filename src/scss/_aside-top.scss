@@ -87,16 +87,15 @@ opacity:1;
     display:flex;
     flex-direction:row;
     align-items:center;
-
-}
-.projectJumpSection > a{
-    margin-left:auto;
-    margin-right:auto;
-    height:100%;
-    width:auto;
-  
-    transition:all 0.5s ease-in-out;
-    color:rgb(80, 80, 80);
+    .projectJumpSection > a{
+        margin-left:auto;
+        margin-right:auto;
+        height:100%;
+        width:auto;
+      
+        transition:all 0.5s ease-in-out;
+        color:rgb(80, 80, 80);
+    }
 }
 .projectJumpSection > a:link{
     text-decoration:none;
@@ -109,7 +108,7 @@ opacity:1;
 /*----------------------ASIDE BAR----------------------CONTENT----------*/
 #aS-projectCover{  /* COVER */
     align-self:center;
-    background-color:rgb(230, 185, 157);
+    background-color:$smooth-red;
 }
 #aS-projectCover>header>a{
     text-decoration: none;
@@ -119,21 +118,21 @@ opacity:1;
     display:flex;
     top:-4em;
 
-    background-color:rgb(230, 220, 157);
+    background-color:$sand-tone;
 }
 #aS-projectTwo{  /* PERIODIC TABLE*/
     top:-4em;
-    background-color:rgb(207, 220, 157);
+    background-color:$grass-green;
 } 
 #aS-projectThree{  /* ACTIVE PORTRAIT*/
     top:-4em;
-    background-color:rgb(207, 220, 187);
+    background-color:$gas-white;
 }
 #aS-projectFour{  /* VIDEO-PORTAL*/
     top:-4em;
-    background-color:rgb(207, 205, 187);
+    background-color:$super-smooth-red;
 }
 #aS-projectFive{  /* SHOPFOLIO*/
     top:-4em;
-    background-color:rgb(179, 181, 187);
+    background-color:$smooth-purple;
 }
