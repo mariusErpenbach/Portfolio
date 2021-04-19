@@ -107,11 +107,12 @@ border-style:solid;
     border-style:solid;
     border-color:black;
     overflow:hidden;
+    p{
+        align-self:center;
+        font-size:5em;
+    }
 }
-.bonusLetter>p{
-    align-self:center;
-    font-size:5em;
-}
+
 
 #bonusFeedbackForm{
     border-style:dotted;

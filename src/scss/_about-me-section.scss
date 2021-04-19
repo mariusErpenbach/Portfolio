@@ -3,8 +3,8 @@
 #personalCharacteristics{
     border-style:dotted;
     border-color:white;
-    width:35%;
-    height:auto;
+    width:100%;
+    height:90vh;
     display:flex;
 }
 #personalCharacteristics>div{
@@ -37,17 +37,16 @@
 }
 #aboutMe-One{
     background-color:rgb(207, 220, 157);
-    left:15%;
     width:10rem;
     height:10rem;
 }
 #aboutMe-Two{
     background-color:rgb(207, 220, 157);
-    left:55%;
-    top:-17rem;
+    position:absolute;
+    left:45%;
+    top:8%;
     width:10rem;
     height:10rem;
-
 }
 #aboutMe-Two>.fa-music{
     position:absolute;
@@ -56,8 +55,9 @@
    
 }
 #aboutMe-Three{
+    position:absolute;
+    top:65%;
     background-color:rgb(207, 220, 157);
-    left:60%;
     width:7rem;
     height:7rem;
 }
@@ -69,9 +69,10 @@
     transform:rotate(-40deg)
 }
 #aboutMe-Four{
+    position:absolute;
+    top:65%;
+    right:-25%;
     background-color:rgb(207, 220, 157);
-    top:-12rem;
-    left:25%;
     width:7rem;
     height:7rem;
 }
