@@ -229,8 +229,8 @@ main > section:hover {
 #personalCharacteristics {
   border-style: dotted;
   border-color: white;
-  width: 35%;
-  height: auto;
+  width: 100%;
+  height: 90vh;
   display: flex;
 }
 
@@ -268,15 +268,15 @@ main > section:hover {
 
 #aboutMe-One {
   background-color: #cfdc9d;
-  left: 15%;
   width: 10rem;
   height: 10rem;
 }
 
 #aboutMe-Two {
   background-color: #cfdc9d;
-  left: 55%;
-  top: -17rem;
+  position: absolute;
+  left: 45%;
+  top: 8%;
   width: 10rem;
   height: 10rem;
 }
@@ -288,8 +288,9 @@ main > section:hover {
 }
 
 #aboutMe-Three {
+  position: absolute;
+  top: 65%;
   background-color: #cfdc9d;
-  left: 60%;
   width: 7rem;
   height: 7rem;
 }
@@ -303,9 +304,10 @@ main > section:hover {
 }
 
 #aboutMe-Four {
+  position: absolute;
+  top: 65%;
+  right: -25%;
   background-color: #cfdc9d;
-  top: -12rem;
-  left: 25%;
   width: 7rem;
   height: 7rem;
 }
@@ -433,8 +435,7 @@ main > section:hover {
   border-color: black;
   overflow: hidden;
 }
-
-.bonusLetter > p {
+.bonusLetter p {
   align-self: center;
   font-size: 5em;
 }
