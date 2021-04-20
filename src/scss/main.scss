@@ -1,4 +1,4 @@
-@import "./mixins";
+@import "./mixins.scss";
 @import "./variables.scss";
 @import "./body.scss";
 @import "./nav.scss";
@@ -6,5 +6,5 @@
 @import "./main-sections.scss";
 @import "./about-me-section.scss";
 @import "./workflow-section.scss";
-@import "./contact-me-section";
-@import "./main-footer";
+@import "./contact-me-section.scss";
+@import "./main-footer.scss";
