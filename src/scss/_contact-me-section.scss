@@ -9,7 +9,6 @@ flex-wrap:wrap;
     display:flex;
     flex-direction:row;
    font-size:1.7em;
-    
    margin-bottom:-5%;
    margin-top:5%;
 
@@ -45,15 +44,14 @@ flex-wrap:wrap;
     margin-right:auto;
 display:flex;
 flex-direction:column;
-border-color:white;
-border-style:solid;
+
 @include center;
 }
 #directMessageFormInfo{
     text-align:center;
     height:15%;
     
-    background-color:#E6B99D;
+    background-color:$sand-tone;
     border-radius:50%;
     margin-bottom:2%; 
     display:flex;  
@@ -88,15 +86,7 @@ border-style:solid;
     flex:2;
 }
 /*----------------------------------------------------------------------RIGHT SIDE*/
-#bonusQuestions{
-    padding:1%;
-    flex:48;
-    margin-top:7%;
-    height:100%;
-    background-color:rgb(83, 102, 117);
-    display:flex;
-    flex-direction:column;
-}
+
 #bonusLetterContainer{
     display:flex;
     flex-direction:row;
@@ -116,14 +106,21 @@ border-style:solid;
         font-size:5em;
     }
 }
-
-
-#bonusFeedbackForm{
-    border-style:dotted;
-    border-color:white;
-    height:auto;
+#bonusQuestions{
+    padding:1%;
+    flex:48;
+    margin-top:7%;
+    height:100%;
+    background-color:rgb(83, 102, 117);
     display:flex;
+    flex-direction:column;
 }
+
+// #bonusFeedbackForm{
+//     @include test-border;
+//     height:auto;
+//     display:flex;
+// }
 #bonusQuestions>section{
 
     margin:1%;

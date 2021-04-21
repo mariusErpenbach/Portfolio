@@ -4,8 +4,9 @@
     border-style:dotted;
     border-color:white;
     width:100%;
-    height:90vh;
+    height:auto;
     display:flex;
+    flex-direction:column;
     div{
         border-style:groove;
         border-color:rgb(218, 226, 185);
@@ -16,7 +17,7 @@
         align-items:center;
         justify-content:center;
         padding:1%;
-        position:absolute;
+        position:relative;
         overflow:hidden;
         p{
             width:80%;
@@ -31,6 +32,8 @@
     align-content:center;
     width:6rem;
     height:6rem;
+    align-self:center;
+    
 }
 #aboutMe-One{
     background-color:rgb(207, 220, 157);
@@ -38,26 +41,38 @@
     height:10rem;
 }
 #aboutMe-Two{
-    background-color:rgb(207, 220, 157);
+    background-color:rgb(227, 230, 215);
     width:10rem;
     height:10rem;
+    flex-wrap:wrap;
+    p{
+        font-size:1.3em;
+    }
+    .fa-music{
+        position:absolute;
+        font-size:10rem;
+        opacity:0.2;
+    }
 }
-#aboutMe-Two>.fa-music{
-    position:absolute;
-    font-size:10rem;
-    opacity:0.2;
-}
+
 #aboutMe-Three{
-    background-color:rgb(207, 220, 157);
+    background-color:$super-smooth-red;
     width:7rem;
     height:7rem;
-}
-#aboutMe-Three>.fa-biking{
-    position:absolute;
-    right:-20%;
-    font-size:7rem;
-    opacity:0.2;
-    transform:rotate(-40deg)
+    p{
+    }
+    .fa-biking{
+        position:absolute;
+        right:-20%;
+        font-size:7rem;
+        opacity:0.2;
+        transform:rotate(-46deg);
+        animation-name:circle-rotation;
+        transition:transform 10s ease-in-out;
+        &:hover{
+            transform:rotate(360deg)
+        }
+    }
 }
 #aboutMe-Four{
     background-color:rgb(207, 220, 157);

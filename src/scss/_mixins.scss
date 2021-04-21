@@ -2,5 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  };
 
+@mixin test-border{
+  border-style:dotted;
+  border-color:white;
+};
