@@ -386,50 +386,7 @@ flex-wrap:wrap;
     align-self:center;
 }
 /*-------------------------------------LEFT SIDE*/
-#directMessageForm{
-    flex:48;
-    padding:1%;
-    margin-top:7%;
-    height:100%;
-    margin-left:auto;
-    margin-right:auto;
-display:flex;
-flex-direction:column;
-border-color:white;
-border-style:solid;
-}
-#directMessageFormInfo{
-    text-align:center;
-    height:15%;
-    background-color:#E6B99D;
-    border-radius:50%;
-    margin-bottom:2%; 
-    display:flex;  
-    justify-content:center;
-}
-#directMessageFormInfo>p{
-    width:70%;
-}
-#directMessageForm>section{
-    margin:1%;
-    padding:5%;
-    display:flex;
-    flex-direction:column;
-    border-style:solid;
-    border-color:rgba(46, 62, 73, 0.39);
-    background-color:rgb(83, 102, 117);
-}
-#directMessageForm>section>label{
-    color:white;
-    margin-bottom:1%;
-}
-#directMessageButton{
-    width:auto;
-    height:7%;
-    align-self:center;
-    background-color:rgb(83, 102, 117);
-    color:white;
-}
+
 /*----------------------------------------------------------------------MID*/
 #visualMid{
     flex:2;

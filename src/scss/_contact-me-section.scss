@@ -1,79 +1,71 @@
 /*----------------------CONTACT ME SECTION--------------------------------------*/
 #contactMeSection{
-min-height:100vh;
-    height:auto;
-flex-direction:column;
-flex-wrap:wrap;
-}
-#formTitle{
-    display:flex;
-    flex-direction:row;
-   font-size:1.7em;
-   margin-bottom:-5%;
-   margin-top:5%;
-
+    min-height:100vh;
+        height:auto;
+    flex-direction:column;
+    flex-wrap:wrap;
    
-}
-
-#directMessageHeader{
-        border-color:rgba(39, 39, 39, 0.233);
+    }
+    #formTitle{
+        display:flex;
+        flex-direction:row;
+       font-size:1.7em;
+       margin-bottom:-5%;
+       margin-top:5%;
+    }
+    #directMessageHeader{
+            border-color:rgba(39, 39, 39, 0.233);
+            border-style:solid;
+    }
+    #bonusFormHeader{
+        margin-left:auto;
+        border-color:rgb(77, 72, 72);
         border-style:solid;
-}
-#bonusFormHeader{
-    margin-left:auto;
-    border-color:rgb(77, 72, 72);
-    border-style:solid;
-}
-
-
-
-#contactMeSection>div{
-    display:flex;   
-    flex-direction:row;
-    width:80%;
-    align-self:center;
-}
+    }
+    #contactMeSection>div{
+        display:flex;
+        flex-direction:row;
+        width:80%;
+        align-self:center;
+    }
 /*-------------------------------------LEFT SIDE*/
 #directMessageForm{
-    flex:48;
-    padding:1%;
+    width:45%;
     margin-top:7%;
     height:100%;
-   width:50%;
     margin-left:auto;
     margin-right:auto;
 display:flex;
+flex:45;
 flex-direction:column;
-
-@include center;
-}
-#directMessageFormInfo{
-    text-align:center;
-    height:15%;
-    
-    background-color:$sand-tone;
-    border-radius:50%;
-    margin-bottom:2%; 
-    display:flex;  
-    justify-content:center;
-}
-#directMessageFormInfo>p{
-    width:70%;
-}
-#directMessageForm>section{
+section{
     margin:1%;
     padding:5%;
-    width:70%;
     display:flex;
+    width:auto;
     flex-direction:column;
     border-style:solid;
     border-color:rgba(46, 62, 73, 0.39);
     background-color:rgb(83, 102, 117);
+    label{
+        color:white;
+        margin-bottom:1%;
+    }
 }
-#directMessageForm>section>label{
-    color:white;
-    margin-bottom:1%;
 }
+#directMessageFormInfo{
+    text-align:center;
+    height:15%;
+    background-color:#E6B99D;
+    border-radius:50%;
+    margin-bottom:2%; 
+    display:flex;  
+    justify-content:center;
+    p{
+        width:70%;
+    }
+}
+
 #directMessageButton{
     width:auto;
     height:7%;
@@ -83,10 +75,9 @@ flex-direction:column;
 }
 /*----------------------------------------------------------------------MID*/
 #visualMid{
-    flex:2;
+    flex:4;
 }
 /*----------------------------------------------------------------------RIGHT SIDE*/
-
 #bonusLetterContainer{
     display:flex;
     flex-direction:row;
@@ -114,52 +105,48 @@ flex-direction:column;
     background-color:rgb(83, 102, 117);
     display:flex;
     flex-direction:column;
-}
-
-// #bonusFeedbackForm{
-//     @include test-border;
-//     height:auto;
-//     display:flex;
-// }
-#bonusQuestions>section{
-
-    margin:1%;
-    display:flex;
-    flex-direction: row;
-    width:100%;
-    background-color:rgb(65, 47, 47);
-    justify-content:flex-end;
     
+    section{
+        margin:1%;
+        display:flex;
+        flex-direction: row;
+        width:100%;
+        margin-top:2%;
+        height:3em;
+        background-color:rgb(25, 81, 105);
+        justify-content:flex-end;
+        label{
+            color:white;
+            align-self:center;
+            flex:50;
+            display:flex;
+            margin-right:2%;
+            justify-content:flex-end;
+             margin-left:auto;
+        }
+        div{
+            flex:50;
+            display:flex;
+            flex-direction:columN;
+            input{
+                justify-self:flex-end;
+                width:95%;
+                margin-top:-5%;
+            }
+            .rangeInfo{
+                align-self:center;
+                width:95%;
+                display:flex;
+                flex-direction:row;
+                div{
+                    flex:10;
+                }
+            }
+        }
+    }
+
 }
 
-#bonusQuestions>section>label{
-    color:white;
-    align-self:center;
-    flex:50;
-    display:flex;
-    margin-right:2%;
-    justify-content:flex-end;
-  margin-left:auto;
-}
-#bonusQuestions>section>div{
-    flex:50;
-    display:flex;
-    flex-direction:columN;
-}
-#bonusQuestions>section>div>input{
-    justify-self:flex-end;
-    width:95%;
-    margin-top:-5%;
-}
-.rangeInfo{
-    align-self:center;
-    width:95%;
-    display:flex;
-    flex-direction:row;
-}
-.rangeInfo>div{
-    flex:10;
-}
 
 /*----------------------CONTACT ME SECTION ASIDE SECTION--------------------------------------*/
 #contactMeSection>aside{
@@ -174,23 +161,25 @@ flex-direction:column;
     display:flex;
     flex-direction:column;
     align-items:center;
+    h1{
+        color:black;
+        }
+    p{
+    font-size:1.2em;
+    width:75%;
+    }
+    div{
+        display:flex;
+        flex-wrap:wrap;
+    }
 }
 .socialAsideButton{
     height:6em;
     width:6em;
     margin:8%;
 }
-#contactMeSection>aside>h1{
-color:black;
-}
-#contactMeSection>aside>p{
-    font-size:1.2em;
-    width:75%;
-}
-#contactMeSection>aside>div{
-    display:flex;
-    flex-wrap:wrap;
-}
+
+
 /*----------------------CONTACT ME SECTION ASIDE SECTION ICONS--------------------------------------*/
 #contactMeSection>aside>div>i{
     font-size:6em;
